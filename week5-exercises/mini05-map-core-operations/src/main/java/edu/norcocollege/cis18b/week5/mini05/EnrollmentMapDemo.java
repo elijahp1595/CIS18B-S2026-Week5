@@ -35,5 +35,8 @@ public class EnrollmentMapDemo {
         System.out.println("Grouped sections: " + departments);
 
         // TODO: Demonstrate and explain why mutable keys are hazardous in hash-based maps.
+        System.out.println("\n--- Mutable Key Hazard Explanation ---");
+        System.out.println("Mutable keys are dangerous because hash-based maps rely on a stable hashCode() to find the correct data bucket.");
+        System.out.println("If a key's internal state changes after insertion and alters its hash code, the map will search the wrong bucket and permanently lose track of the value.");
     }
 }
