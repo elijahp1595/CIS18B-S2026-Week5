@@ -24,7 +24,9 @@ public class CollectionSelectionClinic {
             new Scenario("Unique course codes", "Set", "Values should appear once.", "LinkedHashSet"),
             new Scenario("Student score lookup by ID", "Map", "Key-based lookup is the core operation.", "HashMap"),
             new Scenario("Help desk intake", "Queue", "First ticket in should be processed first.", "ArrayDeque"),
-            new Scenario("Undo operations", "Deque", "LIFO behavior is needed for undo.", "ArrayDeque")
+            new Scenario("Undo operations", "Deque", "LIFO behavior is needed for undo.", "ArrayDeque"),
+            new Scenario("Undo operations", "Deque", "LIFO behavior is needed for undo.", "ArrayDeque"),
+            new Scenario("Latent space coordinate tracking", "List", "The exact sequential ordering of dimensions matters, and duplicate coordinate values must be preserved to accurately plot a vector's position in a high-dimensional space.", "ArrayList")
         );
 
         for (Scenario scenario : scenarios) {
@@ -36,5 +38,6 @@ public class CollectionSelectionClinic {
         }
 
         // TODO: Add one more scenario from your own domain and justify the choice.
+       
     }
 }
