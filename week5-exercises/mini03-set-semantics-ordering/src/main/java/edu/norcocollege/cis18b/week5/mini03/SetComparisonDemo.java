@@ -27,6 +27,10 @@ public class SetComparisonDemo {
         // TODO: Replace with your own comparator (e.g., by length then alphabetically).
         Set<String> customOrder = new TreeSet<>(Comparator.comparingInt(String::length).thenComparing(String::compareTo));
         customOrder.addAll(tags);
+        System.out.println("\n-- Explanation of Ordering Behavior ---");
+        System.out.println("HashSet handles elements based on hash codes, meaning its iteration order is completely unpredictable.");
+        System.out.println("LinkedHashSet preserves insertion order by maintaining a doubly-linked list through its entries.");
+        System.out.println("TreeSet maintains elements in sorted order based on natural string comparison or a custom Comparator.");
         System.out.println("TreeSet (custom comparator): " + customOrder);
     }
 }
