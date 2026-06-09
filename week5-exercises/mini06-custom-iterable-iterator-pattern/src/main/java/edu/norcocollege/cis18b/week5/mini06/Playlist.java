@@ -27,4 +27,12 @@ public class Playlist implements Iterable<PlaylistItem> {
     }
 
     // TODO: Add a third traversal strategy for the extension challenge.
+    public Iterator<PlaylistItem> reverseIterator() {
+        List<PlaylistItem> reversedList = new ArrayList<>();
+
+        for (int i = items.size() - 1; i >= 0; i--) {
+            reversedList.add(items.get(i));
+        }
+        return reversedList.iterator();
+    }
 }

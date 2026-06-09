@@ -15,7 +15,11 @@ public class PlaylistDemo {
         System.out.println("Default order: " + titles(playlist.iterator()));
         System.out.println("Priority order: " + titles(playlist.priorityIterator()));
 
+        System.out.println("Reverse order: " + titles(playlist.reverseIterator()));
         // TODO: Add a brief reflection in your submission about when built-in iteration would be enough.
+        System.out.println("\n--- Reflection ---");
+        System.out.println("A built-in iterator is perfect when you just want to read your data in the exact order you added it.");
+        System.out.println("However, a custom iterator is necessary when you need to process items based on specific rules (like priority or reverse order) without permanently messing up your original list.");
     }
 
     static List<String> titles(Iterator<PlaylistItem> iterator) {
