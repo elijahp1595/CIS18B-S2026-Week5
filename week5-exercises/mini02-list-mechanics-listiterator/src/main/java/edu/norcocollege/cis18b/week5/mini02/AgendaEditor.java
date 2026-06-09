@@ -27,6 +27,10 @@ public class AgendaEditor {
             }
 
             // TODO: Remove any item labeled "Optional" using iterator-safe mutation.
+            else if ("Optional".equals(step)) {
+                iterator.remove();
+            }
+
         }
     }
 
